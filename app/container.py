@@ -1,9 +1,11 @@
-from dao.director import DirectorDAO
-from dao.genre import GenreDAO
-from dao.movie import MovieDAO
-from services.director import DirectorService
-from services.genre import GenreService
-from services.movie import MovieService
+from app.dao.director import DirectorDAO
+from app.dao.genre import GenreDAO
+from app.dao.movie import MovieDAO
+
+from app.services.director import DirectorService
+from app.services.genre import GenreService
+from app.services.movie import MovieService
+
 from app.setup_db import db
 
 director_dao = DirectorDAO(session=db.session)

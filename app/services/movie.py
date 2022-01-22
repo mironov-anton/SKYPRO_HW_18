@@ -8,7 +8,7 @@ class MovieService:
     def get_one(self, mid):
         return self.dao.get_one(mid)
 
-    def get_all(self, filters):
+    def get_all(self):  # , filters)
         # if filters.get("director_id") is not None:
         #     movies = self.dao.get_by_director_id(filters.get("director_id"))
         # elif filters.get("genre_id") is not None:
